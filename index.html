@@ -1,121 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Page Title</title>
+    <meta property="og:image" content="assets/img/building.jpg">
+    <meta name="description" content="ชุมชนคนทำเว็บ">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Corporate-Footer-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Navbar---Apple-1.css">
+    <link rel="stylesheet" href="assets/css/Navbar---Apple.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/Swipe-Slider-7.css">
 </head>
-<body>
 
-<div class="header">
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav flex-grow-1 justify-content-between">
+                    <li class="nav-item d-none d-xs-block d-md-block" role="presentation"><a class="nav-link" href="#"><i class="fa fa-apple apple-logo"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Mac</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">iPad</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">iPhone</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Watch</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">TV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Music</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Support</a></li>
+                    <li class="nav-item d-none d-xs-block d-md-block" role="presentation"><a class="nav-link" href="#"><i class="icon ion-ios-search-strong"></i></a></li>
+                    <li class="nav-item d-none d-xs-block d-md-block" role="presentation"><a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><div class="header">
   <h1>My Website</h1>
   <p>A website created by me.</p>
 </div>
@@ -138,7 +64,7 @@ body {
   <h1>John Doe</h1>
     </div>
 
-  <p class="title">CEO & Founder, Example</p>
+  <p class="title">CEO &amp; Founder, Example</p>
   <p>Harvard University</p>
   <div style="margin: 24px 0;">
     <a href="#"><i class="fa fa-dribbble"></i></a> 
@@ -173,6 +99,79 @@ body {
 <div class="footer">
   <h2>Footer</h2>
 </div>
-
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h4>Lorem Ipsum dolor</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Consectetur adipiscing</a></li>
+                        <li><a href="#">Facilisis vulputate est eget</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Sed elit eros</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Aenean condimentum viverra</a></li>
+                        <li><a href="#">Proin porta diam</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Donec quis turpis vel</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Proin laoreet volutpat</a></li>
+                        <li><a href="#">Aenean tincidunt est</a></li>
+                    </ul>
+                    <h4>Nulla cursus finibus</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Curabitur elementum odio</a></li>
+                        <li><a href="#">Proin condimentum ac</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Nullam ut rutrum elit</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Praesent gravida</a></li>
+                        <li><a href="#">Praesent egestas</a></li>
+                    </ul>
+                    <h4>Ut eget feugiat ante</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Etiam ornare vestibulum</a></li>
+                        <li><a href="#">Donec tincidunt tempus</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <hr>
+            <div class="footer-legal">
+                <div class="float-md-right region"><a href="#"><img src="assets/img/th.gif">ไทย</a></div>
+                <div class="d-inline-block copyright">
+                    <p class="d-inline-block">Copyright © 2018. All rights reserved.<br></p>
+                </div>
+                <div class="d-inline-block legal-links">
+                    <div class="d-inline-block item">
+                        <h5>Privacy Policy</h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5>Terms of Use</h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5>Legal</h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5>License</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Animated-Type-Heading.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/Navbar---Apple.js"></script>
+    <script src="assets/js/Swipe-Slider-7.js"></script>
 </body>
+
 </html>
